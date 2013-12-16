@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css"> 
+</head>
+
+<body>
+
+<img src="images/egor.jpg"/>&nbsp;&nbsp;&nbsp;<b>Egor Control Page</b><br />
+<br />
+Forward State:<span id="forwardState">?</span>
+Back State:<span id="backwardState">?</span>
+Left State:<span id="leftState">?</span>
+Right State:<span id="rightState">?</span>
+<br />
+<br />
+<button type="button"> 
+<img id="forwardBT"  src="images/blue_up.gif" width="50" height="50" alt="off"/><br />
+Forward</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<button type="button">
+    <img id="leftBT" src="images/blue_left.gif"    width="50" height="50" alt="off"><br />
+Left</button>
+<button type="button">
+    <img id="rightBT" src="images/blue_right.gif" width="50" height="50" alt="off"><br />
+Right</button>
+<br />
+
+<button type="button">
+   <img id="backwardBT" src="images/blue_down.gif" width="50" height="50" alt="off"><br />
+Back</button>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button">
+  <img id="panicBT" src="images/red_light.gif" width="50" height="50" alt="off"><br />
+Emergency Shutdown!</button>
+<br />
+
+<!--
+<a href="#" id="startCamBT"><i>start camera</i></a>
+-->
+<a href="#" id="speakBT"><i>speak!</i></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" id="netBT"><i>netTest</i></a>
+<br />
+<br />
+
+<!-- USING JAVASCRIPT READ STATIC FILE 1 PER SECOND -->
+<img src="tmp/motion/dummy.jpg" id="dummy"/>
+
+<!-- USING MOTION BUILT-IN HTTP SERVER 
+<img src="http://172.20.18.152:9090?action=stream"/>
+-->
+
+<br />
+<p id="leTime">time</p>
+
+<script src="egor.js"></script>
+</body>
+
+</html>
